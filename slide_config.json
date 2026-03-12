@@ -1,0 +1,183 @@
+{
+    "_README": "Each key is a slide number (1-based). For single-table slides use a flat config. For multi-table slides use a 'tables' list where each entry maps to a sheet in the Excel file.",
+    "_defaults": {
+        "table_index": 0,
+        "start_row": 1,
+        "start_col": 0,
+        "header_rows": 1,
+        "skip_columns": [],
+        "skip_rows": [],
+        "sheet_name": null,
+        "transpose": false,
+        "font_name": "Avenir Next LT Pro",
+        "font_size": 8,
+        "cond_format_start_col": null,
+        "cond_format_start_row": null
+    },
+    "_multi_table_example": {
+        "tables": [
+            {"table_index": 1, "start_row": 1, "header_rows": 1, "font_name": "Avenir Next LT Pro", "font_size": 8},
+            {"table_index": 2, "start_row": 1, "header_rows": 1, "font_name": "Avenir Next LT Pro", "font_size": 8}
+        ]
+    },
+    "10": {
+        "table_index": 1,
+        "start_row": 3,
+        "start_col": 0,
+        "header_rows": 3,
+        "merge_columns": [0],
+        "negative_red_columns": [2],
+        "positive_green_columns": [2],
+        "pct_color_only_columns": [2],
+        "bold_first_in_merge": true,
+        "font_name": "Avenir Next LT Pro",
+        "font_size": 8,
+        "col_formats": {
+            "2": "pct_auto_round",
+            "3": "pct_auto_round"
+        }
+    },
+    "13": {
+        "table_index": 1,
+        "start_row": 2,
+        "start_col": 0,
+        "header_rows": 1,
+        "merge_columns": [0, 1],
+        "always_bold_columns": [0, 1],
+        "bold_first_in_merge": true,
+        "color_threshold": 1.0,
+        "color_only_rows_where": {"col": 2, "contains": "Attainment"},
+        "font_name": "Avenir Next LT Pro",
+        "font_size": 7,
+        "col_formats": {
+            "3": "pct_auto_round",
+            "4": "pct_auto_round",
+            "5": "pct_auto_round",
+            "6": "pct_auto_round",
+            "7": "pct_auto_round",
+            "8": "pct_auto_round",
+            "9": "pct_auto_round",
+            "10": "pct_auto_round",
+            "11": "pct_auto_round",
+            "12": "pct_auto_round",
+            "13": "pct_auto_round",
+            "14": "pct_auto_round",
+            "15": "pct_auto_round",
+            "16": "pct_auto_round"
+        }
+    },
+    "17": {
+        "table_index": 1,
+        "start_row": 2,
+        "start_col": 0,
+        "header_rows": 2,
+        "negative_red": true,
+        "bold_data_rows": [0],
+        "font_name": "Avenir Next LT Pro",
+        "font_size": 8,
+        "col_formats": {
+            "1": "usd_millions",
+            "2": "pct_halfup",
+            "3": "pct_auto_round",
+            "6": "pct_halfup",
+            "7": "pct_auto_round"
+        }
+    },
+    "18": {
+        "table_index": 0,
+        "start_row": 2,
+        "start_col": 0,
+        "header_rows": 2,
+        "negative_red": true,
+        "bold_data_rows": [23],
+        "font_name": "Avenir Next LT Pro",
+        "font_size": 8,
+        "col_formats": {
+            "4": "pct_auto_round",
+            "5": "usd_short",
+            "6": "usd_short",
+            "7": "pct_auto_round",
+            "10": "pct_auto_round",
+            "11": "usd_short",
+            "12": "usd_short",
+            "13": "pct_auto_round"
+        }
+    },
+    "14": {
+        "table_index": 1,
+        "start_row": 1,
+        "start_col": 0,
+        "header_rows": 1,
+        "font_name": "Avenir Next LT Pro",
+        "font_size": 8,
+        "negative_red_columns": [2],
+        "positive_green_columns": [2],
+        "pct_color_only_columns": [2],
+        "cond_format_start_col": 3,
+        "cond_format_end_col": 10,
+        "cond_format_start_row": 1,
+        "col_formats": {
+            "0": "month_dm",
+            "1": "number_comma",
+            "2": "pct_auto_round",
+            "3": "pct2",
+            "4": "pct2",
+            "5": "pct2",
+            "6": "pct2",
+            "7": "pct2",
+            "8": "pct2",
+            "9": "pct2",
+            "10": "pct2",
+            "12": "pct_auto_round",
+            "13": "month_dm"
+        }
+    },
+    "15": {
+        "tables": [
+            {
+                "table_index": 1,
+                "start_row": 1,
+                "start_col": 0,
+                "header_rows": 1,
+                "font_name": "Avenir Next LT Pro",
+                "font_size": 8,
+                "cond_format_start_col": 5,
+                "cond_format_end_col": 7,
+                "cond_format_start_row": 1,
+                "cond_format_per_column": true,
+                "col_formats": {
+                    "0": "month",
+                    "1": "usd_short",
+                    "2": "usd_short",
+                    "3": "usd_short",
+                    "4": "usd_short",
+                    "5": "pct2",
+                    "6": "pct2",
+                    "7": "pct2"
+                }
+            },
+            {
+                "table_index": 2,
+                "start_row": 1,
+                "start_col": 0,
+                "header_rows": 1,
+                "font_name": "Avenir Next LT Pro",
+                "font_size": 8,
+                "cond_format_start_col": 5,
+                "cond_format_end_col": 7,
+                "cond_format_start_row": 1,
+                "cond_format_per_column": true,
+                "col_formats": {
+                    "0": "month",
+                    "1": "usd_short",
+                    "2": "usd_short",
+                    "3": "usd_short",
+                    "4": "usd_short",
+                    "5": "pct2",
+                    "6": "pct2",
+                    "7": "pct2"
+                }
+            }
+        ]
+    }
+}
