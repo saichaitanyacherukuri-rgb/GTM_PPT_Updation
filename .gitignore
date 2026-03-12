@@ -1,0 +1,20 @@
+# Output files
+*_updated.pptx
+
+# Uploaded data (kept locally, not tracked)
+*.csv
+*.xlsx
+!requirements.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# GitLab Manager credentials
+GitLab Manager/.env
+
+# OS
+.DS_Store
+Thumbs.db
